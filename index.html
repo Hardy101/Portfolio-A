@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo_1.png"
+      type="image/x-icon"
+    />
+    <!-- Line Awesome -->
+    <link
+      rel="stylesheet"
+      href="assets/line-awesome-1.3.0/1.3.0/css/line-awesome.css"
+    />
+    <!-- Google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/remove.css" />
+    <link rel="stylesheet" href="assets/css/utility-classes.css" />
+    <link rel="stylesheet" href="assets/css/javascript-classes.css" />
+    <title>Eghosa</title>
+  </head>
+  <body id="body">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <!-- Floating Navigation -->
+    <div id="navbar-example2" class="nav_page">
+      <div class="nav_page_holder">
+        <a href="#body" class="nav_page_div home">
+          <i class="las la-home"></i>
+          <span class="nav_page_slide">Home</span>
+        </a>
+        <a class="nav_page_div services">
+          <i class="las la-stream"></i>
+          <span class="nav_page_slide">Services</span>
+        </a>
+        <a href="#skills" class="nav_page_div skills">
+          <i class="las la-shapes"></i>
+          <span class="nav_page_slide">Skills</span>
+        </a>
+        <a href="#portfolio" class="nav_page_div portfolio">
+          <i class="las la-grip-vertical"></i>
+          <span class="nav_page_slide">Portfolio</span>
+        </a>
+        <div class="nav_page_div contact">
+          <i class="las la-envelope"></i>
+          <span class="nav_page_slide">Contact</span>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!-- Background Video -->
+      <video
+        loop
+        autoplay
+        muted
+        alt="All the devices"
+        src="assets/vid/vid_1.mp4"
+        id="bgvid"
+      ></video>
+      <!-- Introduction -->
+      <div class="intro_div">
+        <div class="intro_div_holder">
+          <h1>
+            <span>i'm, Eghosa Ordia</span>
+            <span class="intro_span_2">A<span class="word"></span></span>
+          </h1>
+          <p>
+            I'm a Nigerian based web designer & front-end developer focused on
+            crafting clean & user-friendly experiences, I am passionate about
+            building excellent software that improves the lives of those around
+            me.
+          </p>
+        </div>
+      </div>
+      <!-- Navigation Menu -->
+      <div class="navigation">
+        <nav class="navbar fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="assets/img/logo_1.png" width="100" alt=""
+            /></a>
+            <div style="display: flex">
+              <btn class="nav-item dropdown nav_btn">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/img/uk.png" width="30" height="30" alt="" />
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        src="assets/img/uk.png"
+                        width="15"
+                        height="15"
+                        alt="United Kingdom Flag"
+                      />
+                      <span> English</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        src="assets/img/france.png"
+                        width="15"
+                        height="15"
+                        alt="France Flag"
+                      />
+                      <span>French</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        src="assets/img/germany.png"
+                        width="15"
+                        height="15"
+                        alt="Germany Flag"
+                      />
+                      <span>German</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img
+                        src="assets/img/russia.png"
+                        width="15"
+                        height="15"
+                        alt="Russian Flag"
+                      />
+                      <span>Russian</span></a
+                    >
+                  </li>
+                </ul>
+              </btn>
+
+              <button type="button" class="btn toggle_btn nav_btn">
+                <span>Light Mode</span>
+                <span class="switch_btn"><i class="la la-sun"></i></span>
+              </button>
+              <!-- Offcanvas Toggle Button -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <!-- Side Nav -->
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Offcanvas
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body"></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </main>
+    <!-- Skills Section -->
+    <section class="skill_section" id="skills">
+      <div class="skill_section_header">
+        <p class="float_center">about <span>me</span></p>
+        <h2 class="float_back">resume</h2>
+      </div>
+      <!-- Service Division -->
+      <div class="skill_section_info">
+        <h2>My <span>Services</span></h2>
+      </div>
+      <div class="skill_section_body">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="la la-code"></i></h5>
+                <p class="card-text">
+                  <h5 class="card_title">Web <span>Development</span></h5>
+                  Transform your digital presence with expert web development services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="las la-pen-fancy"></i></h5>
+                <p class="card-text">
+                  <h5 class="card_title">Professional <span>Writing</span></h5>
+                  Bring your vision to life with professional, high-quality work.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="las la-photo-video"></i></h5>
+                <p class="card-text">
+                  <h5 class="card_title">Video <span>Editing</span></h5>
+                 Create stunning video content that captures your vision and communicates your message effectively. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio_section" id="portfolio">
+      <div class="portfolio_section_header">
+        <p class="float_center">my <span>portfolio</span></p>
+        <h2 class="float_back">works</h2>
+      </div>
+      <div class="portfolio_section_nav">
+        <button class="portfolio_section_btn active" data-filter="all">
+          all
+        </button>
+        <button class="portfolio_section_btn" data-filter="website">
+          website
+        </button>
+        <button class="portfolio_section_btn" data-filter="video">
+          videos
+        </button>
+        <button class="portfolio_section_btn" data-filter="work">works</button>
+      </div>
+      <div class="portfolio_section_body">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col port_col col-lg-4 video">
+            <div class="card">
+              <img src="assets/img/IMG_3.jpg" class="card-img-top" alt="..." />
+              <div class="card_info_float">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+            </div>
+            <span class="card_info"
+              ><a href="" target="_blank">Alpha Homes  <i class="la la-external-link-alt"></i></a></span
+            >
+          </div>
+          <div class="col port_col col-lg-4 website">
+            <div class="card">
+              <img src="assets/img/IMG_1.jpg" class="card-img-top" alt="..." />
+              <div class="card_info_float">
+                <span>PHP</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+            <span class="card_info"
+              ><a href="http://erudite.rf.gd/pages/" target="_blank"
+                >Student Management System  <i class="la la-external-link-alt"></i></a
+              ></span
+            >
+          </div>
+          <div class="col port_col col-lg-4 work">
+            <div class="card">
+              <img src="assets/img/IMG_4.jpg" class="card-img-top" alt="..." />
+              <div class="card_info_float">
+                <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+              </div>
+            </div>
+            <span class="card_info"
+              ><a href="https://cloth-empire.netlify.app/" target="_blank"
+                >Clothing Express <i class="la la-external-link-alt"></i></a
+              ></span
+            >
+          </div>
+          <div class="col port_col col-lg-4 website">
+            <div class="card">
+              <img src="assets/img/IMG_2.jpg" class="card-img-top" alt="..." />
+              <div class="card_info_float">
+                <span>PHP</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+            <span class="card_info"
+              ><a href="http://grpone.great-site.net/" target="_blank"
+                >Expense Tracker  <i class="la la-external-link-alt"></i></a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
