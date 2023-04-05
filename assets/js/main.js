@@ -129,3 +129,12 @@ $(document.body).on("mousemove", function (e) {
 //   cursor.removeClass("active");
 //   follower.removeClass("active");
 // });
+// Owl Carousel
+$(document).ready(function () {
+  $("#owl-demo").owlCarousel({
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+    items: 4,
+    itemsDesktop: [1199, 4],
+    itemsDesktopSmall: [979, 3],
+  });
+});
